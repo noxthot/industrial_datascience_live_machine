@@ -23,11 +23,10 @@ These measurements are available in real-time via OPC UA.
 This simulator is used in the course material found at https://noxthot.github.io/ws25_industrial_datascience_manuscript/, a course about Industrial Data Science.
 
 ## Author
-Gregor Ehrensperger -- ehrensperger.dev -- 2025
+Gregor Ehrensperger -- ehrensperger.dev -- 2026
 
 ## Citing
-[![DOI](https://zenodo.org/badge/1117321259.svg)](https://zenodo.org/badge/latestdoi/1117321259)
-TODO -> fix
+[![DOI](https://zenodo.org/badge/1130259797.svg)](https://zenodo.org/badge/latestdoi/1130259797)
 
 ## Usage
 - Option A (prerequisite: [uv](https://docs.astral.sh/uv/) installed and trust in the author of the code):
