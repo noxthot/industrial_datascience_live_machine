@@ -1,13 +1,7 @@
 import asyncio
-import joblib
-import os
-import torch
 
 import numpy as np
-
 from asyncua import Client
-from torch import nn
-
 
 INPUT_VARIABLES = [
     "air_temperature",
@@ -109,8 +103,8 @@ class SubHandler:
     def _compute_and_write_corrections(self, latest_values, cycle):
         """Process step data and write corrections."""
 
-        ## >>> EXERCISE (PART 9/10): Remove pass
-        pass
+        ## >>> EXERCISE (PART 9/10): Remove return
+        return
         ## <<<
 
         print("\nProcessing step data...", flush=True)
@@ -157,11 +151,11 @@ def predict_error(input_data):
 
     for col in feature_cols:
         # Find the corresponding input variable name
-        input_key = [k for k, v in NAME_MAPPING.items() if v == col][0]
+        input_key = [k for k, v in NAME_MAPPING.items() if v == col][0]  # noqa: RUF015
         features.append(input_data.get(input_key, 0.0))
 
     # Convert to numpy array
-    X = np.array([features], dtype=np.float32)
+    X = np.array([features], dtype=np.float32)  # noqa: F841
 
     ## >>> EXERCISE (PART 3/10): Optional - Scale input data, if your model requires it
 
@@ -188,7 +182,7 @@ async def main():
             client = Client(url=url)
             await client.connect()
             print("Client connected to OPC UA server.")
-        except Exception as e:
+        except (ConnectionError, OSError, TimeoutError) as e:
             client = None
             print(f"Connection failed: {e}. Retrying in 2 seconds...")
             await asyncio.sleep(2)
