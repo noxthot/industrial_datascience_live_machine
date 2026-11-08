@@ -7,12 +7,12 @@ This script runs a machine simulating a pick and place process with four steps:
 - Place the component and measure the placement accuracy using the camera system.
 
 The machine is instrumented with various sensors to monitor its operation, including:
-- Air temperature [K]: ambient temperature around the machine.
+- Air temperature [°C]: ambient temperature around the machine.
 - Attached Weight [mg]: weight of the component picked up by the vacuum system.
 - Position x [mm]: target position in $x$ direction.
 - Position y [mm]: target position in $y$ direction.
 - Process step: current step in the process (0 to 3).
-- Process temperature [K]: temperature inside the machine.
+- Process temperature [°C]: temperature inside the machine.
 - Speed [mm/s]: speed of the current movement.
 - Speed next [mm/s]: speed for the next movement.
 - Error x [mm]: placement error in $x$ direction (only available at the end of the cycle).

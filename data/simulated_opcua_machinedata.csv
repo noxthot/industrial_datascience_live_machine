@@ -1,4 +1,4 @@
-Air temperature [K],Attached Weight [mg],Position x [mm],Position y [mm],Process step,Process temperature [K],Speed [mm/s],Speed next [mm/s],timestamp,cycle
+Air temperature [°C],Attached Weight [mg],Position x [mm],Position y [mm],Process step,Process temperature [°C],Speed [mm/s],Speed next [mm/s],timestamp,cycle
 24.755379015259198,0,191.82803953736513,7.50322656680008,0,30.38561388470113,100,0,2026-11-08T13:37:00+00:00,1
 25.2152856431098,223.98752741067392,191.82803953736513,7.50322656680008,1,31.615629820544918,0,34.75263865322073,2026-11-08T13:37:01.505090+00:00,1
 24.666008614896892,223.98752741067392,150,150,2,31.998852085742943,34.75263865322073,0,2026-11-08T13:37:02.025090+00:00,1

@@ -17,7 +17,7 @@ ORCHESTRATION_VARIABLES = ["cycle", "process_step"]
 
 # Map input variable names to feature column names
 NAME_MAPPING = {
-    "air_temperature": "Air temperature [K]",
+    "air_temperature": "Air temperature [°C]",
     "attached_weight": "Attached Weight [mg]",
     "cycle": "cycle",
     "error_x": "error_x",
@@ -25,7 +25,7 @@ NAME_MAPPING = {
     "position_x": "Position x [mm]",
     "position_y": "Position y [mm]",
     "process_step": "Process step",
-    "process_temperature": "Process temperature [K]",
+    "process_temperature": "Process temperature [°C]",
     "speed": "Speed [mm/s]",
     "speed_next": "Speed next [mm/s]",
 }
@@ -136,11 +136,11 @@ def predict_error(input_data):
     ## >>> EXERCISE (PART 2/10): Provide a list of features used for your model in correct order
     # Expected feature order from the notebook - modify as needed (ordering, removal of entries), but do not change the names
     feature_cols = [
-        "Air temperature [K]",
+        "Air temperature [°C]",
         "Attached Weight [mg]",
         "Position x [mm]",
         "Position y [mm]",
-        "Process temperature [K]",
+        "Process temperature [°C]",
         "Speed [mm/s]",
         "Speed next [mm/s]",
     ]
